@@ -1,0 +1,26 @@
+{
+  "name": "kraftsamla",
+  "version": "1.0.0",
+  "description": "test automation project for kraftsamla portal.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Andreasson",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.0",
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "cypress": "^13.12.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/Test"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-loader": "^9.1.3",
+    "webpack": "^5.92.1"
+  }
+}
