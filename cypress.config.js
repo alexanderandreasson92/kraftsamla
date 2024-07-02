@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
 const webpack = require("@cypress/webpack-preprocessor");
-const mainUrl = "http://www.google.se";
+const mainUrl = "http://google.se";
 
 async function setupNodeEvents(on, config) {
   await preprocessor.addCucumberPreprocessorPlugin(on, config);

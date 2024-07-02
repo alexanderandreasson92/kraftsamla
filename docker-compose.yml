@@ -12,6 +12,7 @@ services:
 
       - TZ=Europe/Stockholm
 
+
     command:
       - npx
       - cypress
