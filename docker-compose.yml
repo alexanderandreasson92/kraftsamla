@@ -1,21 +1,13 @@
-version: "1"
+version: "1.0"
 
 services:
   testsuite:
     build:
-      args: 
-        CHROME_VERSION: "126.0.6478.56"
-        EDGE_VERSION: "110.0.1587.57-1"
-        ELECTRON_VERSION: "118"
       context: .
     environment:
-
       - TZ=Europe/Stockholm
 
-
     command:
-      - npx
-      - cypress
+      - npx 
+      - cypress 
       - run
-      - --browser
-      - chrome
